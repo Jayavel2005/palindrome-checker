@@ -12,12 +12,12 @@ const checkPalindrome = () =>{
        if (reversedtext === inputValue){
         result.textContent = "The string is a palindrome";
         result.classList.add("text-emerald-500")
-        result.classList.remove("hidden");
+        result.classList.remove("hidden","text-red-400");
        }
        else{
         result.textContent = "This string is not a palindrome";
         result.classList.add("text-red-400")
-        result.classList.remove("hidden")
+        result.classList.remove("hidden","text-emerald-500")
        }
        inputElement.value = ""
     }
